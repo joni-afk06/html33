@@ -2,4 +2,110 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactSection {
+    display: flex;
+    padding: 40px;
+    font-family: sans-serif;
+    gap: 40px;
+    background-color: #f9f9f9;
+    font-size: 26px;
+    
+
+    .contactInfo {
+        flex: 1;
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .location {
+            margin-bottom: 20px;
+
+            h3 {
+                font-size: 1.2em;
+                color: #333;
+                margin-bottom: 5px;
+            }
+
+            p {
+                color: #777;
+            }
+        }
+
+        .source {
+            font-size: 0.8em;
+            color: #999;
+        }
+    }
+
+    .contactForm {
+        flex: 1;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .formGroup {
+            margin-bottom: 20px;
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+                color: #333;
+                font-weight: bold;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                font-size: 1em;
+            }
+
+            textarea {
+                resize: vertical;
+                min-height: 100px;
+            }
+        }
+
+        .submitButton {
+            background-color: #030303;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #555;
+            }
+        }
+    }
 }
